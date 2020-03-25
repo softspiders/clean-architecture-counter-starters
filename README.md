@@ -9,7 +9,6 @@ UNDER DEVELOPMENT
 - counter-app
 - react
 - starter
-- template
 
 ## Children
 
