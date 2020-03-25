@@ -10,7 +10,6 @@ UNDER DEVELOPMENT
 - hooks
 - react
 - starter
-- template
 
 ## Parents
 
