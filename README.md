@@ -12,7 +12,7 @@ UNDER DEVELOPMENT
 - starter
 - template
 
-## Children
+## Parents
 
 [**-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react)
 
