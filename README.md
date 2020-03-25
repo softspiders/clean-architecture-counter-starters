@@ -2,8 +2,8 @@
 
 # clean-architecture-counter-react-hooks-db-ts-starter
 
-A minimalistic counter-app starter that implements *state management* by *hooks* in *TypeScript* and follow
-*Clean Architecture* principles
+Starter for minimalistic *counter-app* on *React* that supports persistence, implements *state management* by *hooks* in
+*TypeScript* and follows *Clean Architecture* principles
 
 UNDER DEVELOPMENT
 
@@ -20,7 +20,7 @@ UNDER DEVELOPMENT
 
 ## Parents
 
-[**-db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
+[**- db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
 
 ---
 ## Author
@@ -30,7 +30,8 @@ UNDER DEVELOPMENT
 ---
 ## Inspired by
 
-[Eduardo Moroni](https://github.com/eduardomoroni)'s [*react-clean-architecture*](https://github.com/eduardomoroni/react-clean-architecture)
+- [Eduardo Moroni](https://github.com/eduardomoroni)'s [*react-clean-architecture*](https://github.com/eduardomoroni/react-clean-architecture)
+- [Kentaro Matsushita](https://github.com/kentaro-m)'s [*clean-architecture-todo-example*](https://github.com/kentaro-m/clean-architecture-todo-example)
 
 ---
 
