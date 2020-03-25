@@ -1,6 +1,6 @@
 # clean-architecture-counter-react-hooks-starter
 
-A minimalistic counter-app starter that implements state managent by hooks and follow *Clean Architecture* principles
+A minimalistic counter-app starter that implements *state managent* by *hooks* and follow *Clean Architecture* principles
 
 UNDER DEVELOPMENT
 
