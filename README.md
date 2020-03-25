@@ -9,13 +9,13 @@ UNDER DEVELOPMENT
 ## Feature tags
 - clean-architecture
 - counter-app
-- hooks
 - jest
 - react
+- react-hooks
 - starter
 - typescript
 
 ## Parents
 
-[**-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react)
+[**-react-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react)
 
