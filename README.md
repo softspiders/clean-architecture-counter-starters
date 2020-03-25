@@ -1,11 +1,17 @@
-# clean-architecture-counter-starters
+# clean-architecture-counter-react
 
-A line of minimalistic counter-app starters that follow *Clean Architecture* principles:
-- clean-architecture-counter-react
-- clean-architecture-counter-react-hooks
-- clean-architecture-counter-react-redux
-- clean-architecture-counter-react-redux-saga 
-
-Each starter is on a separate repository branch
+A minimalistic counter-app starter that follow *Clean Architecture* principles
 
 UNDER DEVELOPMENT
+
+## Feature tags
+- clean-architecture
+- counter-app
+- react
+- starter
+- template
+
+## Children
+
+[**+hooks**](https://github.com/softspiders/clean-architecture-counter-starters)
+
