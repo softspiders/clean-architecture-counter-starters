@@ -1,11 +1,23 @@
-# clean-architecture-counter-starters
+[SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-A line of minimalistic counter-app starters that follow *Clean Architecture* principles:
-- clean-architecture-counter-react
-- clean-architecture-counter-react-hooks
-- clean-architecture-counter-react-redux
-- clean-architecture-counter-react-redux-saga 
+# clean-architecture-counter-react-saga-ts-starter
 
-Each starter is on a separate repository branch
+A minimalistic counter-app starter that implements *state managent* by *hooks* and follow *Clean Architecture* principles
 
 UNDER DEVELOPMENT
+
+## Feature tags
+- clean-architecture
+- counter-app
+- react
+- redux
+- redux-saga
+- jest
+- react
+- starter
+- typescript
+
+## Parents
+
+[**-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react)
+
