@@ -17,4 +17,4 @@ UNDER DEVELOPMENT
 
 ## Parents
 
-[**-redux**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react)
+[**-redux**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-ts-starter)
