@@ -22,7 +22,7 @@ UNDER DEVELOPMENT
 
 ---
 ## Children
-TBD !!! [+**db, rest**](https://github.com/softspiders/clean-architecture-react-counter-db-ts-starter)
+[+**db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-db-ts-starter)
 
 ---
 ## Author
