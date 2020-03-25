@@ -1,4 +1,4 @@
-# clean-architecture-counter-react-hooks-starter
+# clean-architecture-counter-react-hooks-ts-starter
 
 A minimalistic counter-app starter that implements *state managent* by *hooks* and follow *Clean Architecture* principles
 
@@ -8,8 +8,10 @@ UNDER DEVELOPMENT
 - clean-architecture
 - counter-app
 - hooks
+- jest
 - react
 - starter
+- typescript
 
 ## Parents
 
