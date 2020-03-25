@@ -1,4 +1,4 @@
-# clean-architecture-counter-react
+# clean-architecture-counter-react-starter
 
 A minimalistic counter-app starter that follow *Clean Architecture* principles
 
@@ -13,5 +13,6 @@ UNDER DEVELOPMENT
 
 ## Children
 
-[**+hooks**](https://github.com/softspiders/clean-architecture-counter-starters)
+[**+hooks**](https://github.com/softspiders/clean-architecture-counter-hooks-starters)
+
 
