@@ -13,6 +13,6 @@ UNDER DEVELOPMENT
 
 ## Children
 
-[**+hooks**](https://github.com/softspiders/clean-architecture-counter-hooks-starters)
+[**+hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks)
 
 
