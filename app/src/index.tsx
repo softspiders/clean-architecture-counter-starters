@@ -2,12 +2,10 @@ import React, { createContext } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
-import { CounterOutRestAdapter } from './gateway'
-import { CounterInteractor } from './domain/usecase'
+import { CounterInteractor } from './domain/usecases'
 import App from './ui/App'
 
-const restClient = new CounterOutRestAdapter('http://localhost:3001')
-const counterUseCase = new CounterInteractor(restClient)
+const counterUseCase = new CounterInteractor(0)
 
 interface IContextProps {
   useCase: CounterInteractor

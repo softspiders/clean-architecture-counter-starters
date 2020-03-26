@@ -1,2 +1,2 @@
-export * from './entity'
-export * from './usecase'
+export * from './entities'
+export * from './usecases'
