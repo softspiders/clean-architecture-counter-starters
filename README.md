@@ -11,4 +11,8 @@ A set of minimalistic counter-app-starters that follow *Clean Architecture* prin
 
 Each starter is on a separate self-titled branch of the repository
 
+![](./images/hierarchy.svg)
+
+![](./images/hierarchy.png)
+
 UNDER DEVELOPMENT
