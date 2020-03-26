@@ -8,10 +8,7 @@ const App = (): JSX.Element => {
   const { state, functions } = counterContainer({ useCase })
 
   return (
-    <Counter
-      counter={state.counter}
-      onClick={functions.handleIncrementClick}
-    />
+    <Counter counter={state.counter} onClick={functions.handleIncrementClick} />
   )
 }
 
