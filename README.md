@@ -18,11 +18,11 @@ UNDER DEVELOPMENT
 
 ## Parents
 
-[**-react-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-ts-starter)
+[**- react-hooks**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-ts-starter)
 
 ---
 ## Children
-[+**db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-db-ts-starter)
+[**+ db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-db-ts-starter)
 
 ---
 ## Author
