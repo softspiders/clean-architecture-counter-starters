@@ -13,6 +13,8 @@ Each starter is on a separate self-titled branch of the repository
 
 ![](./images/hierarchy.svg)
 
-![](./images/hierarchy.png)
+<p align="center">
+    <img src="./images/hierarchy.png" />
+</p>
 
 UNDER DEVELOPMENT
