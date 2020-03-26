@@ -22,14 +22,14 @@ const CounterContainer = ({useCase}: CounterContainerProps) => {
 
   useEffect(loadCounter, [useCase])
 
-  const handleIncrement = useCallback(async (): Promise<void> => {
+  const handleIncrement = async (): Promise<void> => {
     try {
       const newCounter: Counter = await useCase.increment()
       setCounter(newCounter.count)
     } catch (error) {
       console.log(error)
     }
-  }, [useCase])
+  }
 
   return {
     state: {
