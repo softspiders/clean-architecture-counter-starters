@@ -13,7 +13,7 @@ Each starter is on a separate self-titled branch of the repository
 
 UNDER DEVELOPMENT
 
-# Starter Feature Hierarchy
+# Feature Hierarchy of the starters
 
 <p align="center">
     <img src="./images/hierarchy.svg" />
