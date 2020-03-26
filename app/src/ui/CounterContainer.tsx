@@ -1,12 +1,12 @@
-import { useState, useCallback, useEffect } from 'react'
-import { CounterInteractor } from '../domain/usecases'
-import { Counter } from '../domain/entities'
+import {useState, useCallback, useEffect} from 'react'
+import {CounterInteractor} from '../domain/usecases'
+import {Counter} from '../domain/entities'
 
 interface CounterContainerProps {
   useCase: CounterInteractor
 }
 
-const CounterContainer = ({ useCase }: CounterContainerProps) => {
+const CounterContainer = ({useCase}: CounterContainerProps) => {
   const [counter, setCounter] = useState<number>(1)
 
   const loadCounter = () => {
