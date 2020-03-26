@@ -5,8 +5,6 @@
 A minimalistic counter-app starter that implements *state management* by *hooks* in *TypeScript* and follow
 *Clean Architecture* principles
 
-UNDER DEVELOPMENT
-
 ## Feature tags
 - clean-architecture
 - counter-app
