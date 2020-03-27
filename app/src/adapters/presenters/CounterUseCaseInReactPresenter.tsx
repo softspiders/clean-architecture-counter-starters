@@ -1,11 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import {CounterUseCaseIn} from '../../domain/usecases'
 
-interface CounterContainerProps {
-  counterUseCaseIn: CounterUseCaseIn
-}
-
-const CounterUseCaseInReactPresenter = ({ counterUseCaseIn }: CounterContainerProps) => {
+const CounterUseCaseInReactPresenter = (counterUseCaseIn: CounterUseCaseIn) => {
   const [counter, setCounter] = useState<number>(1)
 
   useEffect(() => {

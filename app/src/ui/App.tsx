@@ -5,7 +5,7 @@ import Counter from './Counter'
 
 const App = (): JSX.Element => {
   const { counterUseCaseIn } = useContext(AppContext)
-  const { state, functions } = counterPresenter({ counterUseCaseIn: counterUseCaseIn })
+  const { state, functions } = counterPresenter(counterUseCaseIn)
 
   return (
     <Counter
