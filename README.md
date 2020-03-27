@@ -1,9 +1,9 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# clean-architecture-counter-react-hooks-db-jest-ts-starter
+# clean-architecture-counter-react-hooks-fullstack-jest-ts-starter
 
-Starter for minimalistic *counter-app* on *React* that supports persistence, implements *state management* by *hooks* in
-*TypeScript* and follows *Clean Architecture* principles
+Starter for fullstack *counter-app* on *React* that implements *state management* by *hooks* in *TypeScript* and follows
+*Clean Architecture* principles
 
 Part of [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
 
@@ -11,6 +11,7 @@ Part of [clean-architecture-counter-starters](https://github.com/softspiders/cle
 - clean-architecture
 - counter-app
 - db
+- fullstack
 - jest
 - react
 - react-hooks
