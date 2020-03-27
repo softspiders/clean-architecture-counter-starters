@@ -7,7 +7,7 @@ export class AdapterFactory {
   //   return CounterUseCaseInReactPresenter
   // }
 
-  public static getRestGateway(url: string): CounterUseCaseOut {
+  public static getCounterRestGateway(url: string): CounterUseCaseOut {
     return new CounterUseCaseOutRestGateway(url)
   }
 }

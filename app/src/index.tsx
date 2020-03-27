@@ -2,12 +2,12 @@ import React, { createContext } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
-import { CounterUseCaseOutRestGateway } from './adapters/gateways'
 import {CounterUseCase, CounterUseCaseIn} from './domain/usecases'
 import App from './ui/App'
+import {AdapterFactory} from "./adapters/AdapterFactory";
 
-const restClient = new CounterUseCaseOutRestGateway('http://localhost:3001')
-const counterUseCase = new CounterUseCase(restClient)
+const restGateway = AdapterFactory.getCounterRestGateway('http://localhost:3001')
+const counterUseCase = new CounterUseCase(restGateway)
 
 interface ContextProps {
   counterUseCaseIn: CounterUseCaseIn
