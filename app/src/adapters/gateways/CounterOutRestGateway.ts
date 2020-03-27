@@ -1,6 +1,6 @@
 import fetch from 'unfetch'
-import { CounterUseCaseOut } from '../../domain/usecase'
-import { Counter } from '../../domain/entity'
+import { CounterUseCaseOut } from '../../domain/usecases'
+import { Counter } from '../../domain/entities'
 
 export class CounterOutRestGateway implements CounterUseCaseOut {
   endpoint: string

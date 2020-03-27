@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { CounterOutRestGateway } from './adapters/gateways'
-import {CounterUseCase, CounterUseCaseIn} from './domain/usecase'
+import {CounterUseCase, CounterUseCaseIn} from './domain/usecases'
 import App from './ui/App'
 
 const restClient = new CounterOutRestGateway('http://localhost:3001')

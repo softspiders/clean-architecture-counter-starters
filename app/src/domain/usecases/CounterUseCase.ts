@@ -1,4 +1,4 @@
-import { Counter } from '../entity'
+import { Counter } from '../entities'
 
 export interface CounterUseCaseIn {
   getCounter(): Promise<number>
