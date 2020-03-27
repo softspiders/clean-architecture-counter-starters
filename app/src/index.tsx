@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { CounterOutRestGateway } from './adapters/gateways'
-import { CounterInteractor } from './domain/usecase'
+import {CounterInteractor, CounterInteractorIn} from './domain/usecase'
 import App from './ui/App'
 
 const restClient = new CounterOutRestGateway('http://localhost:3001')
 const counterInteractor = new CounterInteractor(restClient)
 
-interface IContextProps {
-  counterInteractor: CounterInteractor
+interface ContextProps {
+  counterInteractorIn: CounterInteractorIn
 }
 
-export const AppContext = createContext({} as IContextProps)
+export const AppContext = createContext({} as ContextProps)
 
 ReactDOM.render(
   <React.Fragment>
-    <AppContext.Provider value={{ counterInteractor }}>
+    <AppContext.Provider value={{ counterInteractorIn: counterInteractor }}>
       <App />
     </AppContext.Provider>
   </React.Fragment>,
