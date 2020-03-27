@@ -1,17 +1,17 @@
 import { Counter } from '../entity'
 
-export interface CounterIn {
+export interface CounterInteractorIn {
   getCounter(): Promise<number>
   increment(): Promise<number>
 }
 
-export interface CounterOut {
+export interface CounterInteractorOut {
   getCounter(): Promise<Counter>
   updateCounter(counter: Counter): Promise<Counter>
 }
 
-export class CounterInteractor implements CounterIn {
-  constructor(private counterOut: CounterOut) {}
+export class CounterInteractor implements CounterInteractorIn {
+  constructor(private counterOut: CounterInteractorOut) {}
 
   async getCounter(): Promise<number> {
     const newCounter: Counter = await this.counterOut.getCounter()
