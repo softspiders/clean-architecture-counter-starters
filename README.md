@@ -1,6 +1,6 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# clean-architecture-counter-react-hooks-ts-starter
+# clean-architecture-counter-react-hooks-jest-ts-starter
 
 A minimalistic counter-app starter that implements *state management* by *hooks* in *TypeScript* and follow
 *Clean Architecture* principles
