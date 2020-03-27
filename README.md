@@ -4,7 +4,7 @@
 
 A minimalistic counter-app starter that follow *Clean Architecture* principles
 
-Part of [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
+Part of the [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
 
 UNDER DEVELOPMENT
 
