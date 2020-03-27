@@ -2,7 +2,7 @@ import fetch from 'unfetch'
 import { CounterUseCaseOut } from '../../domain/usecases'
 import { Counter } from '../../domain/entities'
 
-export class CounterOutRestGateway implements CounterUseCaseOut {
+export class CounterUseCaseOutRestGateway implements CounterUseCaseOut {
   endpoint: string
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   client: any

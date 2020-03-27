@@ -5,7 +5,7 @@ interface CounterContainerProps {
   counterUseCaseIn: CounterUseCaseIn
 }
 
-const CounterInReactPresenter = ({ counterUseCaseIn }: CounterContainerProps) => {
+const CounterUseCaseInReactPresenter = ({ counterUseCaseIn }: CounterContainerProps) => {
   const [counter, setCounter] = useState<number>(1)
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const CounterInReactPresenter = ({ counterUseCaseIn }: CounterContainerProps) =>
   }
 }
 
-export default CounterInReactPresenter
+export default CounterUseCaseInReactPresenter

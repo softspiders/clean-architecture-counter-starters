@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import counterPresenter from '../adapters/presenters/CounterInReactPresenter'
+import counterPresenter from '../adapters/presenters/CounterUseCaseInReactPresenter'
 import { AppContext } from '../index'
 import Counter from './Counter'
 
