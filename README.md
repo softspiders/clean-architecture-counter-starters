@@ -2,7 +2,7 @@
 
 # Counter App starters on the *Clean Architecture*
 
-A set of minimalistic counter-app-starters that follow *Clean Architecture* principles:
+A set of minimalistic counter-app-starters that follow the *Clean Architecture* principles:
 - [clean-architecture-counter-react-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-ts-starter/README.md)
 - [clean-architecture-counter-react-hooks-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-hooks-ts-starter/README.md)
 - [clean-architecture-counter-react-hooks-fullstack-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-hooks-db-ts-starter/README.md)
