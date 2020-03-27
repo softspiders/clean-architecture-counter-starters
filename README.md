@@ -1,6 +1,6 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# clean-architecture-counter-react-ts-starter
+# clean-architecture-counter-react-jest-ts-starter
 
 A minimalistic counter-app starter that follow *Clean Architecture* principles
 
