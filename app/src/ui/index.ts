@@ -1,3 +1,3 @@
 export * from './App'
-export * from './CounterContainer'
+export * from '../adapters/presenters/CounterInReactPresenter'
 export * from './Counter'

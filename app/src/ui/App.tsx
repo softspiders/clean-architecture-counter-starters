@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import counterContainer from './CounterContainer'
+import counterPresenter from '../adapters/presenters/CounterInReactPresenter'
 import { AppContext } from '../index'
 import Counter from './Counter'
 
 const App = (): JSX.Element => {
   const { useCase } = useContext(AppContext)
-  const { state, functions } = counterContainer({ useCase })
+  const { state, functions } = counterPresenter({ useCase })
 
   return (
     <Counter

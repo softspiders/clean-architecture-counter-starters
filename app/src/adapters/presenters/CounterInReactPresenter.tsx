@@ -1,11 +1,11 @@
 import { useState, useCallback, useEffect } from 'react'
-import { CounterInteractor } from '../domain/usecase'
+import { CounterInteractor } from '../../domain/usecase'
 
 interface CounterContainerProps {
   useCase: CounterInteractor
 }
 
-const CounterContainer = ({ useCase }: CounterContainerProps) => {
+const CounterInReactPresenter = ({ useCase }: CounterContainerProps) => {
   const [counter, setCounter] = useState<number>(1)
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const CounterContainer = ({ useCase }: CounterContainerProps) => {
   }
 }
 
-export default CounterContainer
+export default CounterInReactPresenter
