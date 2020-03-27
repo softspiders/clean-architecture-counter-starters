@@ -15,7 +15,7 @@ UNDER DEVELOPMENT
 
 # Starter hierarchy
 
-As usual the hierarchy in SoftSpiders is based on [*feature tag*](https://github.com/softspiders/softspiders/blob/master/SoftSpiderTags.md) *sets*:
+As usual the hierarchy in SoftSpiders is based on the [*feature tag*](https://github.com/softspiders/softspiders/blob/master/SoftSpiderTags.md) *sets*:
 
 <p align="center">
     <img src="./images/hierarchy.svg" />
