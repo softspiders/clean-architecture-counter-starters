@@ -5,7 +5,7 @@ import Counter from './Counter'
 
 const App = (): JSX.Element => {
   const { counterInteractor } = useContext(AppContext)
-  const { state, functions } = counterPresenter({ counterInteractor: counterInteractor })
+  const { state, functions } = counterPresenter({ counterInteractor })
 
   return (
     <Counter

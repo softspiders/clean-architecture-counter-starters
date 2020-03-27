@@ -7,7 +7,7 @@ import { CounterInteractor } from './domain/usecase'
 import App from './ui/App'
 
 const restClient = new CounterOutRestGateway('http://localhost:3001')
-const counterInPresenter = new CounterInteractor(restClient)
+const counterInteractor = new CounterInteractor(restClient)
 
 interface IContextProps {
   counterInteractor: CounterInteractor
@@ -17,7 +17,7 @@ export const AppContext = createContext({} as IContextProps)
 
 ReactDOM.render(
   <React.Fragment>
-    <AppContext.Provider value={{ counterInteractor: counterInPresenter }}>
+    <AppContext.Provider value={{ counterInteractor }}>
       <App />
     </AppContext.Provider>
   </React.Fragment>,
