@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react'
+import {useState, useCallback, useEffect} from 'react'
 import {CounterUseCaseIn} from '../../domain/usecases'
 
 const CounterUseCaseInReactPresenter = (counterUseCaseIn: CounterUseCaseIn) => {
