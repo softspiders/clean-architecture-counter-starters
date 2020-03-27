@@ -9,7 +9,7 @@ A set of minimalistic counter-app-starters that follow the *Clean Architecture* 
 - [clean-architecture-counter-react-redux-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-redux-ts-starter/README.md)
 - [clean-architecture-counter-react-redux-saga-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-saga-ts-starter/README.md)
 
-Each starter is on a separate self-titled branch of the repository
+Each starter is on a separate self-titled branch of this repository
 
 UNDER DEVELOPMENT
 
