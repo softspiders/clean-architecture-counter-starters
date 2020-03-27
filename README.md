@@ -1,6 +1,6 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# clean-architecture-counter-react-redux-ts-starter
+# clean-architecture-counter-react-redux-jest-ts-starter
 
 A minimalistic counter-app starter that implements *state management* by *hooks* and follow *Clean Architecture* principles
 
