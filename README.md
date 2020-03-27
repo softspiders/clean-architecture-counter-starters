@@ -13,7 +13,7 @@ Each starter is on a separate self-titled branch of this repository
 
 UNDER DEVELOPMENT
 
-# Hierarchy of these starters
+# Hierarchy of the starters
 
 As usual the hierarchy in SoftSpiders is based on the [*feature tag*](https://github.com/softspiders/softspiders/blob/master/SoftSpiderTags.md) *sets*:
 
