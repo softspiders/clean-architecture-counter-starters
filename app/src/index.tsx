@@ -10,14 +10,14 @@ const restClient = new CounterOutRestGateway('http://localhost:3001')
 const counterInPresenter = new CounterInteractor(restClient)
 
 interface IContextProps {
-  useCase: CounterInteractor
+  counterInteractor: CounterInteractor
 }
 
 export const AppContext = createContext({} as IContextProps)
 
 ReactDOM.render(
   <React.Fragment>
-    <AppContext.Provider value={{ useCase: counterInPresenter }}>
+    <AppContext.Provider value={{ counterInteractor: counterInPresenter }}>
       <App />
     </AppContext.Provider>
   </React.Fragment>,

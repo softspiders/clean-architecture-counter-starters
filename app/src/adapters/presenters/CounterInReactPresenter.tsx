@@ -2,31 +2,31 @@ import { useState, useCallback, useEffect } from 'react'
 import { CounterInteractor } from '../../domain/usecase'
 
 interface CounterContainerProps {
-  useCase: CounterInteractor
+  counterInteractor: CounterInteractor
 }
 
-const CounterInReactPresenter = ({ useCase }: CounterContainerProps) => {
+const CounterInReactPresenter = ({ counterInteractor }: CounterContainerProps) => {
   const [counter, setCounter] = useState<number>(1)
 
   useEffect(() => {
     ;(async (): Promise<void> => {
       try {
-        const newCounter: number = await useCase.getCounter()
+        const newCounter: number = await counterInteractor.getCounter()
         setCounter(newCounter)
       } catch (error) {
         console.log(error)
       }
     })()
-  }, [useCase])
+  }, [counterInteractor])
 
   const handleIncrement = useCallback(async (): Promise<void> => {
     try {
-      const newCounter: number = await useCase.increment()
+      const newCounter: number = await counterInteractor.increment()
       setCounter(newCounter)
     } catch (error) {
       console.log(error)
     }
-  }, [useCase])
+  }, [counterInteractor])
 
   return {
     state: {

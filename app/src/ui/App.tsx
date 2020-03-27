@@ -4,8 +4,8 @@ import { AppContext } from '../index'
 import Counter from './Counter'
 
 const App = (): JSX.Element => {
-  const { useCase } = useContext(AppContext)
-  const { state, functions } = counterPresenter({ useCase })
+  const { counterInteractor } = useContext(AppContext)
+  const { state, functions } = counterPresenter({ counterInteractor: counterInteractor })
 
   return (
     <Counter
