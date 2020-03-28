@@ -1,3 +1,3 @@
 export * from './gateways'
 export * from './presenters'
-export * from './AdapterFactory'
+export * from './Factory'

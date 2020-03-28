@@ -2,20 +2,19 @@ import React, { createContext } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
-import { CounterUseCaseIn } from './domain/usecases'
 import App from './ui/App'
-import { AdapterFactory } from './adapters/AdapterFactory'
+import { Factory } from './adapters'
 
-const counterUseCase = AdapterFactory.getCounterUseCase('http://localhost:3001')
+const adapterFactory = new Factory('http://localhost:3001')
 
-export interface ContextProps {
-  counterUseCaseIn: CounterUseCaseIn
+interface ContextProps {
+  factory: Factory
 }
 
 export const AppContext = createContext({} as ContextProps)
 
 ReactDOM.render(
-  <AppContext.Provider value={{ counterUseCaseIn: counterUseCase }}>
+  <AppContext.Provider value={{ factory: adapterFactory }}>
     <App />
   </AppContext.Provider>,
   document.getElementById('root')
