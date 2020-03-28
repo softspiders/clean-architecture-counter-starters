@@ -1,5 +1,5 @@
-import {useState, useCallback, useEffect} from 'react'
-import {CounterUseCaseIn} from '../../domain/usecases'
+import { useState, useCallback, useEffect } from 'react'
+import { CounterUseCaseIn } from '../../domain/usecases'
 
 const CounterUseCaseInReactPresenter = (counterUseCaseIn: CounterUseCaseIn) => {
   const [counter, setCounter] = useState<number>(1)
