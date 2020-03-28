@@ -15,11 +15,9 @@ export interface ContextProps {
 export const AppContext = createContext({} as ContextProps)
 
 ReactDOM.render(
-  <React.Fragment>
-    <AppContext.Provider value={{ counterUseCaseIn: counterUseCase }}>
-      <App />
-    </AppContext.Provider>
-  </React.Fragment>,
+  <AppContext.Provider value={{ counterUseCaseIn: counterUseCase }}>
+    <App />
+  </AppContext.Provider>,
   document.getElementById('root')
 )
 
