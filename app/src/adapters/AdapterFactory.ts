@@ -1,8 +1,9 @@
 import { CounterUseCaseOutRestGateway } from './gateways'
-import CounterUseCaseInReactPresenter from './presenters/CounterUseCaseInReactPresenter'
+import { CounterUseCase } from '../domain/usecases'
 
 export class AdapterFactory {
-  public static getReactPresenter = () => CounterUseCaseInReactPresenter
-  public static getCounterRestGateway = (url: string) =>
-    new CounterUseCaseOutRestGateway(url)
+  static getCounterUseCase(url: string): CounterUseCase {
+    const restGateway = new CounterUseCaseOutRestGateway(url)
+    return new CounterUseCase(restGateway)
+  }
 }
