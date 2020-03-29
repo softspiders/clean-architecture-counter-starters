@@ -2,7 +2,6 @@ import { CounterUseCaseOutRestGateway } from './gateways'
 import {
   CounterUseCase,
   CounterUseCaseIn,
-  CounterUseCaseOut
 } from '../domain/usecases'
 
 export class Factory {
