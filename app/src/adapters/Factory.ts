@@ -1,8 +1,5 @@
 import { CounterUseCaseOutRestGateway } from './gateways'
-import {
-  CounterUseCase,
-  CounterUseCaseIn,
-} from '../domain/usecases'
+import { CounterUseCase, CounterUseCaseIn } from '../domain/usecases'
 
 export class Factory {
   private readonly counterUseCase: CounterUseCase
