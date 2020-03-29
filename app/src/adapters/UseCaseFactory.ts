@@ -1,7 +1,7 @@
 import { CounterUseCaseOutRestGateway } from './gateways'
 import { CounterUseCase, CounterUseCaseIn } from '../domain/usecases'
 
-export class Factory {
+export class UseCaseFactory {
   private readonly counterUseCase: CounterUseCase
 
   constructor(restApiUrl: string) {

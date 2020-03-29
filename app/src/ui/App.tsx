@@ -1,12 +1,10 @@
 import React, { useContext } from 'react'
 import Counter from './Counter'
-import CounterUseCaseInReactPresenter from '../adapters/presenters/CounterUseCaseInReactPresenter'
-import { AppContext } from '../Root'
+import { AppContext } from '../AppFactory'
 
 const App = (): JSX.Element => {
-  const { factory } = useContext(AppContext)
-  const counterUseCaseIn = factory.getCounterUseCase()
-  const { state, functions } = CounterUseCaseInReactPresenter(counterUseCaseIn)
+  const { counterPresenter } = useContext(AppContext)
+  const { state, functions } = counterPresenter
 
   return (
     <Counter counter={state.counter} onClick={functions.handleIncrementClick} />
