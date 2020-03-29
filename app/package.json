@@ -1,5 +1,5 @@
 {
-  "name": "clean-architecture-react-counter-ts-starter",
+  "name": "clean-architecture-counter-react-hooks-fullstack-jest-ts-starter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +22,23 @@
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx}'"
   },
+  "keywords": [
+    "adapter",
+    "clean-architecture",
+    "counter-app",
+    "create-react-app",
+    "db",
+    "fullstack",
+    "ioc",
+    "jest",
+    "json-server",
+    "persistence",
+    "react",
+    "react-hooks",
+    "rest",
+    "starter",
+    "typescript"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
