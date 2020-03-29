@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Counter from './Counter'
-import { AppContext } from '../AppFactory'
+import { AppContext } from '../index'
 
 const App = (): JSX.Element => {
   const { counterPresenter } = useContext(AppContext)
