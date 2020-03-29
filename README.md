@@ -7,7 +7,7 @@ A set of minimalistic counter-app-starters that follow the *Clean Architecture* 
 - [clean-architecture-counter-react-hooks-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-hooks-ts-starter/README.md)
 - [clean-architecture-counter-react-redux-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-redux-ts-starter/README.md)
 - [clean-architecture-counter-react-redux-saga-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-saga-ts-starter/README.md)
-- [clean-architecture-counter-react-hooks-fullstack-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-hooks-foolstack-ts-starter/README.md)
+- [clean-architecture-counter-react-hooks-fullstack-jest-ts-starter](https://github.com/softspiders/clean-architecture-counter-starters/blob/clean-architecture-counter-react-hooks-foolstack-jest-ts-starter/README.md)
 
 Each starter is on a separate self-titled branch of this repository
 
