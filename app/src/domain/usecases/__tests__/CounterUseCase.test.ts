@@ -5,11 +5,14 @@ import {UseCaseFactory} from "../../../adapters";
 
 describe('CounterUseCase', () => {
   describe('CounterUseCaseIn', () => {
-    describe('getCounter', () => {
+    describe('getCounter of CounterUseCaseOut should be called', () => {
+      let useCaseFactory: UseCaseFactory
+      beforeAll(() => {
+        useCaseFactory = new UseCaseFactory('someUrl')
+      });
+
       it('should return right value', async () => {
-        const counterUseCaseOutRestGateway = new CounterUseCaseOutRestGateway(
-          'someUrl'
-        )
+        const counterUseCaseOut = useCaseFactory.getCounterUseCaseOut()
 
         // const promiseCounter1: Promise<Counter> = Promise.resolve(
         //   new Counter(10)
@@ -17,14 +20,15 @@ describe('CounterUseCase', () => {
         // const promiseCounter: Promise<Counter> = Promise.resolve(
         //   new Counter(91)
         // )
+
+
         const counter10: Counter = new Counter(10)
         const spy = jest
-          .spyOn(counterUseCaseOutRestGateway, 'getCounter')
+          .spyOn(counterUseCaseOut, 'getCounter')
           .mockResolvedValue(counter10)
         //const counterUseCase = new CounterUseCase(counterUseCaseOutRestGateway)
-        const useCaseFactory = new UseCaseFactory('someUrl')
-        const counterUseCase = useCaseFactory.getCounterUseCaseIn()
-        await counterUseCase.getCounter()
+        const counterUseCaseIn = useCaseFactory.getCounterUseCaseIn()
+        await counterUseCaseIn.getCounter()
         expect(spy).toBeCalled()
         //expect(spy).toHaveReturnedWith(counter10)
 
