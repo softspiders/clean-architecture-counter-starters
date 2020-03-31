@@ -12,7 +12,7 @@ interface ContextProps {
 export const AppContext = createContext({} as ContextProps)
 
 const useCaseFactory = new UseCaseFactory('http://localhost:3001')
-const counterUseCaseIn = useCaseFactory.getCounterUseCase()
+const counterUseCaseIn = useCaseFactory.getCounterUseCaseIn()
 
 export const AppFactory = (): JSX.Element => {
   const counterReactPresenter = CounterUseCaseInReactPresenter(counterUseCaseIn)

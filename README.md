@@ -18,6 +18,7 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 - rest
 - starter
 - typescript
+- unit-test
 
 ## Parents
 

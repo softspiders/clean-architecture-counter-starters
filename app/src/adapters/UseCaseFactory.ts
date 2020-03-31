@@ -9,7 +9,7 @@ export class UseCaseFactory {
     this.counterUseCase = new CounterUseCase(counterRestGateway)
   }
 
-  getCounterUseCase(): CounterUseCaseIn {
+  getCounterUseCaseIn(): CounterUseCaseIn {
     return this.counterUseCase
   }
 }
