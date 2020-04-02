@@ -30,14 +30,8 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 [Alexander Lapygin](https://github.com/AlexanderLapygin) <<alexanderlapygin@gmail.com>>
 
 ---
-## Inspired by
 
-- [Eduardo Moroni](https://github.com/eduardomoroni)'s [*react-clean-architecture*](https://github.com/eduardomoroni/react-clean-architecture)
-- [Kentaro Matsushita](https://github.com/kentaro-m)'s [*clean-architecture-todo-example*](https://github.com/kentaro-m/clean-architecture-todo-example)
-
----
-
-## Usage
+## Run
 
 ```sh
 # API
@@ -51,6 +45,20 @@ npm install
 npm start
 ```
 
+## Test
+
+```sh
+cd app
+npm run test
+```
+
+test with coverage:
+```sh
+cd app
+npm run test:coverage
+```
+
 ---
+
 ## :memo: License
 [MIT](./LICENSE)
