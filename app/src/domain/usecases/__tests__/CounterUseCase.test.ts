@@ -12,18 +12,20 @@ describe('CounterUseCase', () => {
     })
     describe('getCounter()', () => {
       it('should return right value', async () => {
-        jest
+        const getCounterSpy = jest
           .spyOn(useCaseFactory.getCounterUseCaseOut(), 'getCounter')
           .mockResolvedValue(new Counter(COUNTER_VALUE))
         expect(await useCaseFactory.getCounterUseCaseIn().getCounter()).toBe(
           COUNTER_VALUE
         )
+
+        getCounterSpy.mockRestore()
       })
     })
 
     describe('increment()', () => {
       it('should call updateCounter with right value', async () => {
-        jest
+        const getCounterSpy = jest
           .spyOn(useCaseFactory.getCounterUseCaseOut(), 'getCounter')
           .mockResolvedValue(new Counter(COUNTER_VALUE))
 
@@ -37,19 +39,25 @@ describe('CounterUseCase', () => {
         expect(updateCounterSpy.mock.calls[0][0]).toEqual(
           new Counter(COUNTER_VALUE + 1)
         )
+
+        getCounterSpy.mockRestore()
+        updateCounterSpy.mockRestore()
       })
       it('should return right value', async () => {
-        jest
+        const getCounterSpy = jest
           .spyOn(useCaseFactory.getCounterUseCaseOut(), 'getCounter')
           .mockResolvedValue(new Counter(COUNTER_VALUE))
 
-        jest
+        const updateCounterSpy = jest
           .spyOn(useCaseFactory.getCounterUseCaseOut(), 'updateCounter')
           .mockResolvedValue(new Counter(COUNTER_VALUE + 1))
 
         expect(await useCaseFactory.getCounterUseCaseIn().increment()).toEqual(
           COUNTER_VALUE + 1
         )
+
+        getCounterSpy.mockRestore()
+        updateCounterSpy.mockRestore()
       })
     })
   })
