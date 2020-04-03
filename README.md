@@ -13,6 +13,7 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 - db
 - fullstack
 - jest
+- jest-fetch-mock
 - react
 - react-hooks
 - rest
