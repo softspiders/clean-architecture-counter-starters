@@ -31,6 +31,7 @@
     "fullstack",
     "ioc",
     "jest",
+    "jest-fetch-mock",
     "json-server",
     "persistence",
     "react",
