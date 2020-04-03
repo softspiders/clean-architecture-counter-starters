@@ -10,7 +10,4 @@ describe('Counter', () => {
   it('Created with positive number should be the same', () => {
     expect(new Counter(5).counter).toBe(5)
   })
-  // it('Created with positive number should be the same', () => {
-  //   expect(new Counter(5).counter1).toBe(5)
-  // })
 })

@@ -35,8 +35,8 @@ describe('CounterUseCase', () => {
 
         await useCaseFactory.getCounterUseCaseIn().increment()
 
-        expect(updateCounterSpy.mock.calls.length).toBe(1)
-        expect(updateCounterSpy.mock.calls[0][0]).toEqual(
+        expect(updateCounterSpy).toHaveBeenCalledTimes(1)
+        expect(updateCounterSpy).toHaveBeenCalledWith(
           new Counter(COUNTER_VALUE + 1)
         )
 
