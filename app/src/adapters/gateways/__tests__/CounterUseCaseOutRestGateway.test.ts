@@ -7,7 +7,7 @@ describe('CounterUseCaseOutRestGateway', () => {
   const COUNTER_VALUE = 99
   const COUNTER_ID = 1
 
-  beforeEach(() => {
+  afterEach(() => {
     fetchMock.resetMocks()
   })
 
@@ -78,3 +78,5 @@ describe('CounterUseCaseOutRestGateway', () => {
     })
   })
 })
+
+fetchMock.disableMocks()
