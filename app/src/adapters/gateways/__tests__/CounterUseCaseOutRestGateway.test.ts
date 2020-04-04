@@ -18,5 +18,15 @@ describe('CounterUseCaseOutRestGateway', () => {
       expect(fetchMock).toHaveBeenCalledTimes(1)
       expect(fetchMock.mock.calls[0][0]).toEqual('http://someUrl/counter')
     })
+
+    // xit('Should return right value', async () => {
+    //   fetchMock.mockResponses([JSON.stringify([{}]), {status: 200}])
+    //
+    //   const counterGateway = new CounterUseCaseOutRestGateway('http://someUrl')
+    //   await counterGateway.getCounter()
+    //
+    //   expect(fetchMock).toHaveBeenCalledTimes(1)
+    //   expect(fetchMock.mock.calls[0][0]).toEqual('http://someUrl/counter')
+    // })
   })
 })

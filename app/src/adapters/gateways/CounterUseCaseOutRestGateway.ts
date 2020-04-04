@@ -1,3 +1,4 @@
+import fetch from 'cross-fetch'
 import { CounterUseCaseOut } from '../../domain/usecases'
 import { Counter } from '../../domain/entities'
 
