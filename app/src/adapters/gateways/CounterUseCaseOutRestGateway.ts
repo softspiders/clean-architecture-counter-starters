@@ -16,7 +16,6 @@ export class CounterUseCaseOutRestGateway implements CounterUseCaseOut {
     // eslint-disable-next-line no-useless-catch
     try {
       const response = await this.client(this._createUrl('/counter'))
-
       if (response.ok) {
         const json = await response.json()
         return new Counter(json[0].counter)
