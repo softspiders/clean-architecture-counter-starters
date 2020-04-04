@@ -1,17 +1,22 @@
+import { CounterUseCaseOutRestGateway } from '../CounterUseCaseOutRestGateway'
 import { enableFetchMocks } from 'jest-fetch-mock'
+
 enableFetchMocks()
 
-//import fetch from 'unfetch'
-
-//jest.mock('unfetch')
-
 describe('CounterUseCaseOutRestGateway', () => {
-  it('should ...', async () => {
-    // fetch.mockReturnValue(Promise.resolve(new Response('4')))
-    // fetch.mockResponse(() => callMyApi().then(res => ({body: res}))
-    // let response = await fetch();
+  describe('getCounter()', () => {
+    beforeEach(() => {
+      fetchMock.resetMocks()
+    })
 
-    fetch.resetMocks()
-    fetch.mockResponseOnce(JSON.stringify({ data: '12345' }))
+    it('Should execute http://someUrl/counter request and only once', async () => {
+      fetchMock.mockResponses([JSON.stringify([{}]), {}])
+
+      const counterGateway = new CounterUseCaseOutRestGateway('http://someUrl')
+      await counterGateway.getCounter()
+
+      expect(fetchMock).toHaveBeenCalledTimes(1)
+      expect(fetchMock.mock.calls[0][0]).toEqual('http://someUrl/counter')
+    })
   })
 })
