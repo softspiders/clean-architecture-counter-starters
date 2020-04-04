@@ -30,6 +30,15 @@ describe('CounterUseCaseOutRestGateway', () => {
       const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
       expect((await counterGateway.getCounter()).counter).toBe(COUNTER_VALUE)
     })
+    it('Should throw an error when status not Ok', async () => {
+      fetchMock.mockResponseOnce(
+        JSON.stringify([{ counter: COUNTER_VALUE, id: COUNTER_ID }]),
+        { status: 400 }
+      )
+
+      const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
+      await expect(counterGateway.getCounter()).rejects.toThrowError()
+    })
   })
 
   describe('updateCounter()', () => {
