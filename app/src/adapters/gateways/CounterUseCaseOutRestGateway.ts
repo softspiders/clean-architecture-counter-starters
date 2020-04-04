@@ -3,19 +3,12 @@ import { CounterUseCaseOut } from '../../domain/usecases'
 import { Counter } from '../../domain/entities'
 
 export class CounterUseCaseOutRestGateway implements CounterUseCaseOut {
-  endpoint: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  client: any
-
-  constructor(endpoint: string) {
-    this.endpoint = endpoint
-    this.client = fetch
-  }
+  constructor(private readonly endpoint: string) {}
 
   public async getCounter(): Promise<Counter> {
     // eslint-disable-next-line no-useless-catch
     try {
-      const response = await this.client(this._createUrl('/counter'))
+      const response = await fetch(this._createUrl('/counter'))
       if (response.ok) {
         const json = await response.json()
         return new Counter(json[0].counter)
@@ -29,7 +22,7 @@ export class CounterUseCaseOutRestGateway implements CounterUseCaseOut {
   public async updateCounter(newCounter: Counter): Promise<Counter> {
     // eslint-disable-next-line no-useless-catch
     try {
-      const response = await this.client(this._createUrl(`/counter/1`), {
+      const response = await fetch(this._createUrl(`/counter/1`), {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
