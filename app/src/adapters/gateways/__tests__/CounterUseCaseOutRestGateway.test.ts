@@ -1,17 +1,18 @@
 import { CounterUseCaseOutRestGateway } from '../CounterUseCaseOutRestGateway'
+import { Counter } from '../../../domain/entities'
 
 describe('CounterUseCaseOutRestGateway', () => {
   const ENDPOINT = 'endpoint'
   const ENDPOINT_URL = `http://${ENDPOINT}`
   const COUNTER_VALUE = 99
-  const COUNTER_ID = 9
+  const COUNTER_ID = 1
+
+  beforeEach(() => {
+    fetchMock.resetMocks()
+  })
 
   describe('getCounter()', () => {
-    beforeEach(() => {
-      fetchMock.resetMocks()
-    })
-
-    it('Should perform the http://endpoint/counter request, and only once', async () => {
+    it('Should perform the /counter request, and only once', async () => {
       fetchMock.mockResponses([JSON.stringify([{}]), {}])
 
       const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
@@ -28,6 +29,36 @@ describe('CounterUseCaseOutRestGateway', () => {
 
       const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
       expect((await counterGateway.getCounter()).counter).toBe(COUNTER_VALUE)
+    })
+  })
+
+  describe('updateCounter()', () => {
+    it('Should perform the /counter/id request, and only once', async () => {
+      fetchMock.mockResponses([JSON.stringify([{}]), {}])
+
+      const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
+      await counterGateway.updateCounter(new Counter(COUNTER_VALUE))
+
+      expect(fetchMock).toHaveBeenCalledTimes(1)
+      expect(fetchMock.mock.calls[0][0]).toEqual(
+        `${ENDPOINT_URL}/counter/${COUNTER_ID}`
+      )
+    })
+    it('Should return the correct value corresponding to the http-response', async () => {
+      fetchMock.mockResponseOnce(
+        JSON.stringify({ counter: COUNTER_VALUE, id: COUNTER_ID })
+      )
+
+      const counterGateway = new CounterUseCaseOutRestGateway(ENDPOINT_URL)
+      // expect(
+      //   (await counterGateway.updateCounter(new Counter(COUNTER_VALUE))).counter
+      // ).toBe(COUNTER_VALUE)
+
+      const counter = (await counterGateway.updateCounter(
+        new Counter(COUNTER_VALUE)
+      )).counter
+
+      expect(counter).toBe(COUNTER_VALUE)
     })
   })
 })
