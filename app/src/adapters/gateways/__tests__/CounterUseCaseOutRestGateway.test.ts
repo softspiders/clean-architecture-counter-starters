@@ -3,7 +3,7 @@ enableFetchMocks()
 
 //import fetch from 'unfetch'
 
-jest.mock('unfetch')
+//jest.mock('unfetch')
 
 describe('CounterUseCaseOutRestGateway', () => {
   it('should ...', async () => {
