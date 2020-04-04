@@ -1,7 +1,4 @@
 import { CounterUseCaseOutRestGateway } from '../CounterUseCaseOutRestGateway'
-import { enableFetchMocks } from 'jest-fetch-mock'
-
-enableFetchMocks()
 
 describe('CounterUseCaseOutRestGateway', () => {
   const ENDPOINT = 'ENDPOINT'
