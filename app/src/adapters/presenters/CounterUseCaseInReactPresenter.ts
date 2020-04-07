@@ -15,6 +15,7 @@ const CounterUseCaseInReactPresenter = (counterUseCaseIn: CounterUseCaseIn) => {
     })()
   }, [counterUseCaseIn])
 
+  // TODO Вынести в Controller
   const handleIncrement = useCallback(async (): Promise<void> => {
     try {
       const newCounter: number = await counterUseCaseIn.increment()
