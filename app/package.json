@@ -59,7 +59,7 @@
       "!./src/index.tsx",
       "!./src/serviceWorker.ts",
       "!./src/**/index.ts",
-      "!./src/react-app-env.d.ts"
+      "!./src/**/*.d.ts"
     ],
     "coverageReporters": ["text"]
   },
