@@ -22,7 +22,7 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 
 ---
 ## Children
-[**+ db, jest-fetch-mock, rest, react-testing-library, test-coverage, storyshot**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-db-ts-starter)
+[**+ db, jest-fetch-mock, rest, react-testing-library, test-coverage, storyshot**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-fullstack-jest-ts-starter)
 
 ---
 ## Author
