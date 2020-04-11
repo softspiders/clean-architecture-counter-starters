@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface CounterProps {
+export interface CounterProps {
   counter: number
   onClick: () => void
 }
@@ -8,7 +8,9 @@ interface CounterProps {
 const Counter = ({ counter, onClick }: CounterProps): JSX.Element => (
   <div>
     <div>{counter}</div>
-    <button onClick={onClick}>Click</button>
+    <button data-testid="button-testid" onClick={onClick}>
+      Click
+    </button>
   </div>
 )
 

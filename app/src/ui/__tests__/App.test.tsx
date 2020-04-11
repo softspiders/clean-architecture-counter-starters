@@ -2,9 +2,9 @@ import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import { AppFactory } from '../../AppFactory'
 
-describe('Take a snapshot', () => {
+describe('AppFactory', () => {
   afterEach(cleanup)
-  it('should take a snapshot', () => {
+  it('Should match the snapshot', () => {
     const { asFragment } = render(<AppFactory />)
     expect(asFragment()).toMatchSnapshot()
   })
