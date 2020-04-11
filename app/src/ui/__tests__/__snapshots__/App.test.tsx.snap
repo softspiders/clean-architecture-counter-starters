@@ -2,12 +2,11 @@
 
 exports[`Take a snapshot should take a snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="App"
-  >
-    <h1>
-      Testing Updated
-    </h1>
+  <div>
+    <div />
+    <button>
+      Click
+    </button>
   </div>
 </DocumentFragment>
 `;
