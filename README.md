@@ -14,16 +14,19 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 - fullstack
 - jest
 - jest-fetch-mock
+- json-server
 - react
 - react-hooks
+- react-testing-library
 - rest
 - starter
+- storyshot
 - typescript
 - unit-test
 
 ## Parents
 
-[**- db, rest**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
+[**- db, jest-fetch-mock, rest, react-testing-library, storyshot**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
 
 ---
 ## Author
