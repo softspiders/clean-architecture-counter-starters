@@ -13,9 +13,9 @@ const useCaseFactory = new UseCaseFactory('http://localhost:3001')
 const counterUseCaseIn = useCaseFactory.getCounterUseCaseIn()
 
 export const AppFactory = (): JSX.Element => {
-  const counterReactPresenter = CounterUseCaseInReactPresenter(counterUseCaseIn)
+  const counterPresenter = CounterUseCaseInReactPresenter(counterUseCaseIn)
   return (
-    <AppContext.Provider value={{ counterPresenter: counterReactPresenter }}>
+    <AppContext.Provider value={{ counterPresenter }}>
       <App />
     </AppContext.Provider>
   )

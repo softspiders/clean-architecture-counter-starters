@@ -15,7 +15,7 @@ export const CounterUseCaseInReactPresenter = (
         console.log(error)
       }
     })()
-  }, [])
+  }, [counterUseCaseIn])
 
   // TODO Вынести в Controller
   const handleIncrement = useCallback(async (): Promise<void> => {
