@@ -35,6 +35,11 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 [Alexander Lapygin](https://github.com/AlexanderLapygin) <<alexanderlapygin@gmail.com>>
 
 ---
+## Inspired by
+
+[Eduardo Moroni](https://github.com/eduardomoroni)'s [*react-clean-architecture*](https://github.com/eduardomoroni/react-clean-architecture)
+
+---
 
 ## Run
 
