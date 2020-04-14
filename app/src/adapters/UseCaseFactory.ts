@@ -1,17 +1,17 @@
 import { CounterUseCaseOutRestGateway } from './gateways'
 import {
-  CounterUseCase,
+  CounterInteractor,
   CounterUseCaseIn,
   CounterUseCaseOut
 } from '../domain/usecases'
 
 export class UseCaseFactory {
-  private readonly counterUseCase: CounterUseCase
+  private readonly counterUseCase: CounterInteractor
   private readonly counterRestGateway: CounterUseCaseOut
 
   constructor(restApiUrl: string) {
     this.counterRestGateway = new CounterUseCaseOutRestGateway(restApiUrl)
-    this.counterUseCase = new CounterUseCase(this.counterRestGateway)
+    this.counterUseCase = new CounterInteractor(this.counterRestGateway)
   }
 
   getCounterUseCaseIn(): CounterUseCaseIn {
