@@ -1,20 +1,21 @@
-import { CounterRestGateway } from './gateways'
 import {
   CounterInteractor,
   CounterUseCaseIn,
   CounterUseCaseOut
 } from '../domain/usecases'
+import { CounterRestGateway } from './gateways'
 
 export class UseCaseFactory {
-  private readonly counterUseCase: CounterInteractor
-  //  private readonly counterRestGateway: CounterUseCaseOut
+  private readonly counterUseCaseIn: CounterUseCaseIn
+  private readonly counterRestGateway: CounterRestGateway
 
-  constructor(private readonly counterRestGateway: CounterUseCaseOut) {
-    this.counterUseCase = new CounterInteractor(this.counterRestGateway)
+  constructor() {
+    this.counterRestGateway = new CounterRestGateway('http://localhost:3001')
+    this.counterUseCaseIn = new CounterInteractor(this.counterRestGateway)
   }
 
   getCounterUseCaseIn(): CounterUseCaseIn {
-    return this.counterUseCase
+    return this.counterUseCaseIn
   }
 
   getCounterUseCaseOut(): CounterUseCaseOut {

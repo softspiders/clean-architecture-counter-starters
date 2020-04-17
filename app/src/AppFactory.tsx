@@ -1,7 +1,7 @@
 import React, { createContext } from 'react'
 import CounterPresenter from './adapters/presenters/CounterPresenter'
 import App from './ui/App'
-import { CounterRestGateway, UseCaseFactory } from './adapters'
+import { UseCaseFactory } from './adapters'
 
 interface ContextProps {
   counterPresenter: any
@@ -9,8 +9,8 @@ interface ContextProps {
 
 export const AppContext = createContext({} as ContextProps)
 
-const counterRestGateway = new CounterRestGateway('http://localhost:3001')
-const useCaseFactory = new UseCaseFactory(counterRestGateway)
+const useCaseFactory = new UseCaseFactory()
+
 const counterUseCaseIn = useCaseFactory.getCounterUseCaseIn()
 
 export const AppFactory = (): JSX.Element => {
