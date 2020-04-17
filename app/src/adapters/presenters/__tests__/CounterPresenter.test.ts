@@ -1,4 +1,4 @@
-import { CounterUseCaseInReactPresenter } from '../CounterUseCaseInReactPresenter'
+import { CounterPresenter } from '../CounterPresenter'
 
 describe('CounterUseCaseInReactPresenter', () => {
   it('Should perform the /counter request, and only once', async () => {

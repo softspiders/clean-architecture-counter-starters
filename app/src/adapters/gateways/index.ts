@@ -1,1 +1,1 @@
-export * from './CounterUseCaseOutRestGateway'
+export * from './CounterRestGateway'

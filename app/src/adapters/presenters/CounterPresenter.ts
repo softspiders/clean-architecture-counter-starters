@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import { CounterUseCaseIn } from '../../domain/usecases'
 
-export const CounterUseCaseInReactPresenter = (
+export const CounterPresenter = (
   counterUseCaseIn: CounterUseCaseIn
 ) => {
   const [counter, setCounter] = useState<number>()
@@ -37,4 +37,4 @@ export const CounterUseCaseInReactPresenter = (
   }
 }
 
-export default CounterUseCaseInReactPresenter
+export default CounterPresenter

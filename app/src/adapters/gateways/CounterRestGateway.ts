@@ -2,7 +2,7 @@ import fetch from 'cross-fetch'
 import { CounterUseCaseOut } from '../../domain/usecases'
 import { Counter } from '../../domain/entities'
 
-export class CounterUseCaseOutRestGateway implements CounterUseCaseOut {
+export class CounterRestGateway implements CounterUseCaseOut {
   constructor(private readonly endpoint: string) {}
 
   public async getCounter(): Promise<Counter> {
