@@ -30,6 +30,15 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 [**- db, jest-fetch-mock, rest, react-testing-library, test-coverage, storyshot**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
 
 ---
+## Clean Architecture diagram
+
+<p align="center">
+  <a href="https://github.com/softspider">
+    <img src="./app/diagrams/packages.uml.svg" />
+  </a>
+</p>
+
+---
 ## Author
 
 [Alexander Lapygin](https://github.com/AlexanderLapygin) <<alexanderlapygin@gmail.com>>
