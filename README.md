@@ -2,6 +2,12 @@
 
 # clean-architecture-counter-react-hooks-fullstack-jest-ts-starter
 
+<p align="center">
+  <a href="https://github.com/softspider">
+    <img src="./app/diagrams/packages.uml.svg" width="600"/>
+  </a>
+</p>
+
 Starter for fullstack *counter-app* on *React* that implements *state management* by *hooks* in *TypeScript* and follows
 *Clean Architecture* principles
 
@@ -28,15 +34,6 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 ## Parents
 
 [**- db, jest-fetch-mock, rest, react-testing-library, test-coverage, storyshot**](https://github.com/softspiders/clean-architecture-counter-starters/tree/clean-architecture-counter-react-hooks-ts-starter)
-
----
-## Clean Architecture diagram
-
-<p align="center">
-  <a href="https://github.com/softspider">
-    <img src="./app/diagrams/packages.uml.svg" width="600"/>
-  </a>
-</p>
 
 ---
 ## Author
