@@ -34,7 +34,7 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 
 <p align="center">
   <a href="https://github.com/softspider">
-    <img src="./app/diagrams/packages.uml.svg" width="400"/>
+    <img src="./app/diagrams/packages.uml.svg" width="800"/>
   </a>
 </p>
 
