@@ -7,10 +7,9 @@ import {
 
 export class UseCaseFactory {
   private readonly counterUseCase: CounterInteractor
-  private readonly counterRestGateway: CounterUseCaseOut
+  //  private readonly counterRestGateway: CounterUseCaseOut
 
-  constructor(restApiUrl: string) {
-    this.counterRestGateway = new CounterRestGateway(restApiUrl)
+  constructor(private readonly counterRestGateway: CounterUseCaseOut) {
     this.counterUseCase = new CounterInteractor(this.counterRestGateway)
   }
 
