@@ -25,7 +25,6 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 - react-testing-library
 - rest
 - starter
-- storyshot
 - test-coverage
 - typescript
 - unit-test
