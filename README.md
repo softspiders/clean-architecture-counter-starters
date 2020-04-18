@@ -2,10 +2,11 @@
 
 # clean-architecture-counter-react-hooks-fullstack-jest-ts-starter
 
-<p align="center">
+<br align="center">
   <a href="https://github.com/softspider">
     <img src="./app/diagrams/packages.uml.svg" width="600"/>
   </a>
+  </br>
   <b>Package structure</b>
 </p>
 
