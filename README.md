@@ -15,6 +15,9 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
   <b>Package structure</b>
 </p>
 
+---
+
+
 ## Feature tags
 - clean-architecture
 - counter-app
