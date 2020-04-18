@@ -4,6 +4,8 @@
 
 Part of the [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
 
+---
+
 <p align="center">
   <a href="https://github.com/softspider">
     <img src="./app/diagrams/packages.uml.svg" width="600"/>
