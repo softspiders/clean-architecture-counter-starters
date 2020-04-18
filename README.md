@@ -44,7 +44,6 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
     <img src="./app/diagrams/packages.uml.svg" width="600"/>
   </a>
   </br>
-  </br>
   <b>Package structure</b>
 </p>
 
