@@ -6,18 +6,6 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 
 ---
 
-<p align="center">
-  <a href="https://github.com/softspider">
-    <img src="./app/diagrams/packages.uml.svg" width="600"/>
-  </a>
-  </br>
-  </br>
-  <b>Package structure</b>
-</p>
-
----
-
-
 ## Feature tags
 - clean-architecture
 - counter-app
@@ -48,6 +36,17 @@ Part of the [clean-architecture-counter-starters](https://github.com/softspiders
 ## Inspired by
 
 [Eduardo Moroni](https://github.com/eduardomoroni)'s [*react-clean-architecture*](https://github.com/eduardomoroni/react-clean-architecture)
+
+---
+
+<p align="center">
+  <a href="https://github.com/softspider">
+    <img src="./app/diagrams/packages.uml.svg" width="600"/>
+  </a>
+  </br>
+  </br>
+  <b>Package structure</b>
+</p>
 
 ---
 
