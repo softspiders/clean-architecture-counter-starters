@@ -7,11 +7,11 @@ import { CounterRestGateway } from './gateways'
 
 export class AdapterFactory {
   private readonly counterUseCaseIn: CounterUseCaseIn
-  private readonly counterRestGateway: CounterRestGateway
+  private readonly counterUseCaseOut: CounterRestGateway
 
   constructor() {
-    this.counterRestGateway = new CounterRestGateway('http://localhost:3001')
-    this.counterUseCaseIn = new CounterInteractor(this.counterRestGateway)
+    this.counterUseCaseOut = new CounterRestGateway('http://localhost:3001')
+    this.counterUseCaseIn = new CounterInteractor(this.counterUseCaseOut)
   }
 
   getCounterUseCaseIn(): CounterUseCaseIn {
@@ -19,6 +19,6 @@ export class AdapterFactory {
   }
 
   getCounterUseCaseOut(): CounterUseCaseOut {
-    return this.counterRestGateway
+    return this.counterUseCaseOut
   }
 }
