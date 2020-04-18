@@ -2,6 +2,8 @@
 
 # Fullstack counter-app-starter on *React* in *TypeScript* that follows *Clean Architecture* principles
 
+Part of the [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
+
 <p align="center">
   <a href="https://github.com/softspider">
     <img src="./app/diagrams/packages.uml.svg" width="600"/>
@@ -9,8 +11,6 @@
   </br>
   <b>Package structure</b>
 </p>
-
-Part of the [clean-architecture-counter-starters](https://github.com/softspiders/clean-architecture-counter-starters/blob/master/README.md)
 
 ## Feature tags
 - clean-architecture
