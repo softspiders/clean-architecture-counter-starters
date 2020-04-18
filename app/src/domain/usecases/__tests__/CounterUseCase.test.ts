@@ -1,14 +1,14 @@
 import { CounterInteractor } from '../CounterInteractor'
 import { Counter } from '../../entities'
-import { UseCaseFactory } from '../../../adapters'
+import { AdapterFactory } from '../../../adapters'
 
 describe('CounterUseCase', () => {
   const COUNTER_VALUE = 99
   const SOME_COUNTER = new Counter(-1)
   describe('CounterUseCaseIn', () => {
-    let useCaseFactory: UseCaseFactory
+    let useCaseFactory: AdapterFactory
     beforeAll(() => {
-      useCaseFactory = new UseCaseFactory('someUrl')
+      useCaseFactory = new AdapterFactory('someUrl')
     })
     describe('getCounter()', () => {
       it('should return right value', async () => {

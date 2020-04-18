@@ -5,7 +5,7 @@ import {
 } from '../domain/usecases'
 import { CounterRestGateway } from './gateways'
 
-export class UseCaseFactory {
+export class AdapterFactory {
   private readonly counterUseCaseIn: CounterUseCaseIn
   private readonly counterRestGateway: CounterRestGateway
 

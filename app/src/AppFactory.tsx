@@ -1,7 +1,7 @@
 import React, { createContext } from 'react'
 import usePresenter from './adapters/presenters/CounterPresenter'
 import App from './ui/App'
-import { UseCaseFactory } from './adapters'
+import { AdapterFactory } from './adapters'
 
 interface ContextProps {
   counterPresenter: any
@@ -9,10 +9,10 @@ interface ContextProps {
 
 export const AppContext = createContext({} as ContextProps)
 
-const useCaseFactory = new UseCaseFactory()
+const adapterFactory = new AdapterFactory()
 
 export const AppFactory = (): JSX.Element => {
-  const counterPresenter = usePresenter(useCaseFactory.getCounterUseCaseIn())
+  const counterPresenter = usePresenter(adapterFactory.getCounterUseCaseIn())
   return (
     <AppContext.Provider value={{ counterPresenter }}>
       <App />
