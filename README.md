@@ -1,8 +1,6 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# clean-architecture-counter-react-hooks-fullstack-jest-ts-starter
-
-Fullstack counter-app-starter on *React* in *TypeScript* that follows *Clean Architecture* principles
+# Fullstack counter-app-starter on *React* in *TypeScript* that follows *Clean Architecture* principles
 
 <p align="center">
   <a href="https://github.com/softspider">
