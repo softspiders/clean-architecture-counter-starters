@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 import Counter, { CounterProps } from '../Counter'
 
 describe('Counter()', () => {
-  it('should change value according to the new props on the click - not do the increment', () => {
+  it('should change value according to the new props on the click - not do the increment here', () => {
     const OLD_VALUE = 5
     const NEW_VALUE = 999
     const { getByTestId, rerender } = render(
