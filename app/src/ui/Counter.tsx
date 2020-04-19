@@ -7,7 +7,7 @@ export interface CounterProps {
 
 const Counter = ({ counter, onClick }: CounterProps): JSX.Element => (
   <div>
-    <div>{counter}</div>
+    <div data-testid="value-testid">{counter}</div>
     <button data-testid="button-testid" onClick={onClick}>
       Click
     </button>

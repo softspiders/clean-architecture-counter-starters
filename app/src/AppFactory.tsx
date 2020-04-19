@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import usePresenter from './adapters/presenters/CounterPresenter'
+import usePresenter from './adapters/presenters/UsePresenter'
 import App from './ui/App'
 import { AdapterFactory } from './adapters'
 
