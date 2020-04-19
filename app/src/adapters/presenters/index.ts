@@ -1,1 +1,1 @@
-export * from './UsePresenter'
+export * from './usePresenter'
