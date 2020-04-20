@@ -13,7 +13,7 @@ export const usePresenter = (counterUseCaseIn: CounterUseCaseIn) => {
         console.log(error)
       }
     })()
-  }, [counterUseCaseIn])
+  }, [])
 
   // TODO Extract to Controller
   const handleIncrement = useCallback(async (): Promise<void> => {
