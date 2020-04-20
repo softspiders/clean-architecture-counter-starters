@@ -30,7 +30,7 @@ export const usePresenter = (counterUseCaseIn: CounterUseCaseIn) => {
       counter
     },
     functions: {
-      handleIncrementClick: handleIncrement
+      increment: handleIncrement
     }
   }
 }

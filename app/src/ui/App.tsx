@@ -7,7 +7,7 @@ const App = (): JSX.Element => {
   const { state, functions } = counterPresenter
 
   return (
-    <Counter counter={state.counter} onClick={functions.handleIncrementClick} />
+    <Counter counter={state.counter} onClick={functions.increment} />
   )
 }
 
