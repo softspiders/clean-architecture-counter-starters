@@ -33,7 +33,6 @@ describe('usePresenter', () => {
   })
 
   it('should increment...', async () => {
-    console.log('usePresenter.test BEFORE const { result } = renderHook(() =>')
     const { result } = renderHook(() =>
       usePresenter(new CounterUseCaseInMock())
     )
@@ -44,5 +43,30 @@ describe('usePresenter', () => {
       _result = result
     })
     expect(_result.current.state.counter).toBe(COUNTER_VALUE + 1)
+  })
+
+  it('should print error', async () => {
+    class CounterUseCaseInErrorMock implements CounterUseCaseIn {
+      getCounter(): Promise<number> {
+        return Promise.resolve(0)
+      }
+
+      increment(): Promise<number> {
+        throw new Error()
+      }
+    }
+
+    const { result } = renderHook(() =>
+      usePresenter(new CounterUseCaseInErrorMock())
+    )
+
+    const spy = jest.spyOn(global.console, 'error')
+
+    await act(async () => {
+      await result.current.functions.increment()
+    })
+    expect(spy).toHaveBeenCalledTimes(1)
+
+    spy.mockRestore()
   })
 })

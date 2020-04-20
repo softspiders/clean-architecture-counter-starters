@@ -10,7 +10,7 @@ export const usePresenter = (counterUseCaseIn: CounterUseCaseIn) => {
         const newCounter: number = await counterUseCaseIn.getCounter()
         setCounter(newCounter)
       } catch (error) {
-        console.log(error)
+        console.error(error)
       }
     })()
   }, [])
@@ -21,7 +21,7 @@ export const usePresenter = (counterUseCaseIn: CounterUseCaseIn) => {
       const newCounter: number = await counterUseCaseIn.increment()
       setCounter(newCounter)
     } catch (error) {
-      console.log(error)
+      console.error(error)
     }
   }, [counterUseCaseIn])
 
