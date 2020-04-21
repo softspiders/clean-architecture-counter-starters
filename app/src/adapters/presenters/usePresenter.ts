@@ -16,7 +16,6 @@ export const usePresenter = (counterUseCaseIn: CounterUseCaseIn) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // TODO Extract to Controller
   const handleIncrement = useCallback(async (): Promise<void> => {
     try {
       const newCounter: number = await counterUseCaseIn.increment()
