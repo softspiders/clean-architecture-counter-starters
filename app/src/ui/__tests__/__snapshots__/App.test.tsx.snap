@@ -9,7 +9,7 @@ exports[`AppFactory Should match the snapshot 1`] = `
     <button
       data-testid="button-testid"
     >
-      Click
+      +
     </button>
   </div>
 </DocumentFragment>
