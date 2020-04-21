@@ -31,6 +31,6 @@ describe('Counter()', () => {
     const { getByTestId } = render(Counter(<CounterProps>{}))
 
     const buttonNode = getByTestId('button-testid')
-    expect(buttonNode).toHaveTextContent('Click')
+    expect(buttonNode).toHaveTextContent('+')
   })
 })
