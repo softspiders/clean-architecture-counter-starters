@@ -10,7 +10,7 @@ export class AdapterFactory {
   private readonly counterUseCaseOut: CounterRestGateway
 
   constructor() {
-    this.counterUseCaseOut = new CounterRestGateway('http://localhost:3001')
+    this.counterUseCaseOut = new CounterRestGateway(`${process.env.REACT_APP_API_URL}`)
     this.counterUseCaseIn = new CounterInteractor(this.counterUseCaseOut)
   }
 
